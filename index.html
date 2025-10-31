@@ -28,16 +28,33 @@
     }
 
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.image-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.row-description {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
   </style>
 </head>
 <body>
@@ -45,16 +62,18 @@
   <h2>A small collection of art works I have created for research and social groups at the University of Edinburgh</h2>
   
   <div class="gallery">
-    <img src="images/SCIFFY_colour.png" alt="SCIFFY colour logo">
-    <img src="images/SCIFFY_mono.png" alt="SCIFFY monochrome logo">
-  <div class="row-description">
+    <div class="image-row">
+      <img src="images/SCIFFY_colour.png" alt="SCIFFY colour logo">
+      <img src="images/SCIFFY_mono.png" alt="SCIFFY monochrome logo">
+    <div class="row-description">
     <p>Logo created for the University of Edinburgh Science Fiction and Fantasy Society. 
       Adopted by the society as the official logo in 2018, and was used on all society advertising, 
-      documentation and merchandise until the society was disbanded in 2024.</p>
+      documentation and merchandise until the society was disbanded in 2024.
+    </p>
   </div>
-
+  <div class="image-row">
     <img src="images/bumblebee_brigade_logo.png" alt="Bumblebee Brigade logo">
-    <!-- Add more images here -->
   </div>
+  
 </body>
 </html>
