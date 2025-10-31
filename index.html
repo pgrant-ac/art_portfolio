@@ -19,6 +19,10 @@
       color: #555;
       margin-top: 0;
     }
+    h1, h2 {
+  text-align: left;
+  margin-left: 0;
+    }
     p.description {
       text-align: center;
       max-width: 600px;
@@ -27,16 +31,17 @@
       font-size: 1rem;
     }
 
-    .gallery {
+.gallery {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: flex-start;
 }
 
 .image-row {
   display: flex;
   gap: 15px;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -48,12 +53,13 @@
 }
 
 .row-description {
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
   color: #555;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 5px 0 20px;
 }
+
 
   </style>
 </head>
