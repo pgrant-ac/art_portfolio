@@ -58,9 +58,14 @@
   max-width: 700px;
   margin: 5px 0 20px;
 }
+.square-image img {
+  width: 300px;       /* Set a fixed width */
+  height: 300px;      /* Match height to make it square */
+  object-fit: cover;  /* Crop to fill the square without distortion */
+  border: 2px solid black; /* Black border */
+}
 
-
-  </style>
+</style>
 </head>
 <body>
   <h1>Perrin Grant's Portfolio</h1>
@@ -110,26 +115,28 @@
   </p>    
 
 <div class="image-row">
+  <div class="square-image">
       <img src="images/camera_rig.png" alt="Bee photography rig">
   </div>
-  <p>The camera rig designed to take consistent pictures of Bumblebee wings for Alix Prybyla's PhD project.
-    It was printed by the UCreate service at the University of Edinburgh Central Library. It was designed to 
-    be printed in two parts that could be easily slotted and glued together due to the limited sizes of the 
-    printers available. One side (closest in the above image) was designed to fit the field camera precisely, 
-    with holes for straps so it could be secured once slotted in. The opposite side has a slot to insert graph 
-    paper, which is an ideal material to slide between a bee's wings and body for clear photography. The purpose 
-    of this rig was to ensure a set distance between the camera lens and wings. This not only saved time 
-    since the camera never needed to refocus, but also allowed for far easier and automated image analysis 
-    as one scale bar could be applied to every image.
-  </p> 
+</div>
+<p>The camera rig designed to take consistent pictures of Bumblebee wings for Alix Prybyla's PhD project.
+  It was printed by the UCreate service at the University of Edinburgh Central Library. It was designed to 
+  be printed in two parts that could be easily slotted and glued together due to the limited sizes of the 
+  printers available. One side (closest in the above image) was designed to fit the field camera precisely, 
+  with holes for straps so it could be secured once slotted in. The opposite side has a slot to insert graph 
+  paper, which is an ideal material to slide between a bee's wings and body for clear photography. The purpose 
+  of this rig was to ensure a set distance between the camera lens and wings. This not only saved time 
+  since the camera never needed to refocus, but also allowed for far easier and automated image analysis 
+  as one scale bar could be applied to every image.
+</p> 
     
 <div class="image-row">
-      <img src="images/biosoc_colour.jpg" alt="BioSoc colour logo">
-      <img src="images/biosoc_mono.jpg" alt="Biosoc monochrome logo">
-  </div>
-  <p>Logo entered into a competition to design the new logo for the University of Edinburgh Biology Society 
-    (BioSoc) in 2023. This logo was not selected.
-  </p>
+    <img src="images/biosoc_colour.jpg" alt="BioSoc colour logo">
+    <img src="images/biosoc_mono.jpg" alt="Biosoc monochrome logo">
+</div>
+<p>Logo entered into a competition to design the new logo for the University of Edinburgh Biology Society 
+  (BioSoc) in 2023. This logo was not selected.
+</p>
 
 </body>
 </html>
