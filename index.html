@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Art Collage</title>
+  <title>Art Portfolio</title>
   <style>
     body {
       background-color: #f5f5f5;
@@ -10,6 +10,23 @@
       margin: 0;
       padding: 20px;
     }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    h2 {
+      text-align: center;
+      color: #555;
+      margin-top: 0;
+    }
+    p.description {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: #666;
+      font-size: 1rem;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -24,10 +41,18 @@
   </style>
 </head>
 <body>
-  <h1>My Art Collage</h1>
+  <h1>Perrin Grant's Portfolio</h1>
+  <h2>A small collection of art works I have created for research and social groups at the University of Edinburgh</h2>
+  
   <div class="gallery">
     <img src="images/SCIFFY_colour.png" alt="Art 1">
     <img src="images/SCIFFY_mono.png" alt="Art 2">
+  <div class="row-description">
+    <p>Logo created for the University of Edinburgh Science Fiction and Fantasy Society. 
+      Adopted by the society as the official logo in 2018, and was used on all society advertising, 
+      documentation and merchandise until the society was disbanded in 2024.</p>
+  </div>
+
     <img src="images/Bumblebee_brigade_logo.png" alt="Art 3">
     <!-- Add more images here -->
   </div>
